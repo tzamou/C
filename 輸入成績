@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void)
+{
+	int a,i,A,B,C,f;
+	for(i=1;i<=10;i++)
+	{
+		printf("輸入第%d個成績",i);
+		scanf("%d",&a);
+		if(a>=76&&a<=100)
+		{
+		printf("A\n");
+		A++;
+		}
+		else if(a>=60&&a<=75)
+		{
+		printf("B\n");
+		B++;
+		}
+		else if(a>=0&&a<=59)
+		{
+		printf("C\n");
+		C++;
+		}
+		else
+		{
+		printf("錯誤\n");
+		f++;
+		}	
+	}
+	printf("得到A的有%d人\n",A-1);
+	printf("得到B的有%d人\n",B);
+	printf("得到C的有%d人\n",C);
+	printf("成績錯誤的有%d人\n",f);
+	
+	system("pause");
+	return 0;
+}
