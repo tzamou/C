@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void)
+{
+	int a,r0,r,c;
+	for(int i=100;i<1000;i++)
+	{	
+		a=i/100;
+		r0=i%100;
+		r=r0/10;
+		c=i%10;
+		if(a*a*a+r*r*r+c*c*c==i)
+		printf("%d,",i);
+	}
+	system("pause");
+	return 0;
+}
